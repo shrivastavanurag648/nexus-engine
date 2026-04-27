@@ -1,0 +1,33 @@
+.focus-container {
+  display: flex;
+  position: relative;
+  gap: 0.5rem;
+}
+
+.focus-word {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.focus-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 0 10px var(--glow-color);
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 4px;
+}
+
+.corner {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--border-color);
+}
+.corner.top-left { top: -2px; left: -2px; }
+.corner.top-right { top: -2px; right: -2px; }
+.corner.bottom-left { bottom: -2px; left: -2px; }
+.corner.bottom-right { bottom: -2px; right: -2px; }
